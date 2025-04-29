@@ -4,120 +4,189 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Big Shoulders", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-nav {
-    height:70;
+nav{
+    height: 70px;
     display: flex;
     justify-content: space-between;
+    font-family: 'Big Shoulders', sans-serif;
     align-items: center;
-    padding: 0 16px;
-    background-color: rgb(51, 230, 230);
+    padding: 0 16px ;
+    background-color: #cafdff;
+}
+
+.laptop{
+    font-size: 200%;
 }
 
 header{
-    background-color: #eadcff;
-    height: calc(100vh - 70px);
-    padding: 24px;
+    background-color:#eadcff ;
+    height:calc( 100vh - 70px); /* 100vh minus the height of the nav bar */
+    padding-top: 128px; /* Adds space at the top of the header */
+    padding-bottom: 128px; /* Adds space at the bottom of the header */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 h1{
-    font-size: 72px;
+    font-size: 60px;
+    margin-left: 16px;
 }
 
 .subheader{
     font-size: 36px;
-    margin: 16px 0 24px 0;
+    color: #000000;
+    font-weight: 400;
+    margin-left: 16px; /* Adds space between the h1 and the subheader */
+    
 }
 
 button{
     background-color: #05c7cf;
     color: white;
     border: none;
-    padding: 8pxn 0 16px 0;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-a{
-    color: #000;
+    padding: 16px 32px; /* Adds padding to the button */
+    margin:  16px; /* Adds space on the sides of the button */
     font-size: 24px;
     font-weight: 700;
+    cursor: pointer;
+    border-radius: 8px; /* Rounds the corners of the button */
+}
+a{
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav ul li {
+    display: inline; /* Makes the list items line up side by side */
+    margin-right:16px; /* Adds space between the links */
 }
 
 .logo{
     width: 300px;
 }
-   
 ul{
     display: flex;
 }
 
 li{
-    list-style: none;
-   padding-left: 16px;
+   list-style-type: none; 
+   padding-left: 32px; 
 }
 
+/* about section */
+
+#about{
+    background-color: #f8ffdc;
+    padding: 48px; /* Adds padding to the about section */
+}
 .row{
     width: 100%;
-    max-width: 1300px;
-    display: flex;
+    max-width: 400px; /* Sets a maximum width for the row */
+    align-items:center ;
+    justify-content: center;
+    margin: 0 auto; /* Centers the row horizontally */
+}
+
+h2{
+    font-size: 60px;
+    margin-bottom: 24px; /* Adds space below the paragraph */
+    text-align: center;
+}
+
+.section__description{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.about__img_wrapper{
+    width: 100%; /* Sets the width of the image wrapper to 40% */
+    padding: 0 24px; /* Adds padding to the left and right of the image */
+}
+
+img {
+    width: 100%; /* Makes the image take up the full width of its container */
+}
+
+.about__img-wrapper,
+.description__description--wrapper{
+    width: 60%;
+    padding:0 24px; /* Adds padding to the left and right of the text */;
+}
+
+.section__description__para{
+    font-size: 20px;
+    line-height: 1.5; /* Increases the line height for better readability */
+    margin-bottom: 24px; /* Adds space between the h2 and the paragraph */
+    text-align: center;
+}
+
+/* Discord */
+
+#Discord {
+    background-color: #cefeff; /* Sets the background color to Discord's brand color */
     align-items: center;
-    justify-content: center;    
+    text-align: center;
+    padding: 48px; /* Adds padding to the Discord section */
+}
+/*
+
+contact section
+
+*/
+
+#Contact{
+    background-color: #dce9ff; /* Sets the background color to Contact's brand color */
+    padding: 48px; /* Adds padding to the Contact section */
+    display: flex;
+}
+
+form {
+    width: 100%;    /* Sets the form to take up the full width of its container */
+    max-width: 600px; /* Sets a maximum width for the form */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Centers the form horizontally */
+}
+
+input, textarea {
+    margin-bottom: 24px; /* Adds space between the input fields */
+    font-size: 20px; /* Sets the font size for the input fields */
+    padding: 6px; /* Adds padding to the input fields */
 }
 
 /*
 
-about
+footer section
 
 */
 
-#about{
-    padding: 48px;
-    background-color: #f8ffdc;
+footer{
+    background-color: #cafdff; /* Sets the background color to the footer's brand color */
+    
+    padding: 24px; /* Adds padding to the footer section */
+    text-align: center; /* Centers the text in the footer */
+    font-size: 20px; /* Sets the font size for the footer text */
+    color: #000000; /* Sets the text color to black */
+    padding: 48px ;
 }
 
-h2{
-    font-size: 48px;
-    text-align:center;
-    margin-bottom: 16px;
+.footer__logo{
+    max-width: 480px; /* Sets a maximum width for the footer logo */
+    margin-bottom: 16px; /* Adds space between the logo and the footer text */
 }
 
-.section__description{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer__link{
+    padding: 0 16px; /* Adds padding to the left and right of the footer links */
 }
-
-.about__img--wrapper{
-    width: 40%
-}
-
-img{
-    width: 100%;
-}
-
-.section__description--wrapper{
-    width: 60%;
-}
-
-.section__img--wrapper,
-.section__description__wrapper {
-    padding: 0 24px;
-}
-.section__description__para{
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 24px;
-}
-
-figure{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+@media(max-width: 728px) {
+    .row{
+        flex-direction: column; /* Stacks the elements vertically on smaller screens */
+    }
 }
