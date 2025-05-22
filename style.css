@@ -18,6 +18,10 @@ img{
   padding: 20px;
 }
 
+p {
+line-height: 1.5;
+}
+
 .nav__container {
     width: 100%;
     max-width: 1200px;
@@ -75,6 +79,7 @@ header {
 }
 
 .header__container {
+  padding-top: 24PX;
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
@@ -127,28 +132,32 @@ button:active {
 
 .container {
  padding: 56px 0;
- float: middle; /* Float each element to the left */
+ display: flex;
 }
 
 .row {
  width: 100%;
  max-width: 1200px;
  margin: 0 auto;
+ display: flex;
 }
-
 /*
 
 HIGHLIGHTS
 
 */
 
+#highlight {
+  position: relative;
+}
+
 .highlight__wrapper {
   display: flex;
-  
+    
 }
 
 .highlight {
-  padding: 0 24
+  padding: 0 24px;
   width: calc(100% / 3);
   display: flex;
   align-items: center;
@@ -158,10 +167,11 @@ HIGHLIGHTS
 
 .highlight__para {
   text-align: center;
-}
+  max-width: 280px;
+}      
 
 .highlight__img {
-  border: 2px solid #7342d6;
+  border: 2px solid #7342d669;
   color: #7342d6;
   width: 100px;
   height: 100px;
