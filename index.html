@@ -1,117 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
   <link rel="stylesheet" href="style.css">
-  </head>
-  
-  <body>
-    <section>
+  <script src="https://kit.fontawesome.com/62c7431606.js" crossorigin="anonymous"></script>
+</head>
+
+<body>  
+    <section id="landing">
       <nav>
-        <img src="HTML Practise Assets/FES.svg" class="logo" alt="">  
-        <ul class="nav__links">  
-        <li><a href="#about">About</a></li>
-          <li><a href="#discord">Discord</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </nav>
-     
-      <header>
-        <div class="row">
-          <h1>The best place to learn frontend</h1>
-          <p class="subheader">Go from being a absolute beginner to a pro witha simplified process</p>
-          <button>Start now!</button>
+        <div class="nav__container"> 
+            <img class="logo" src="Library.svg" alt="">
+            <ul class="nav-links">
+                <li><a href="#" class="nav__link">Home</a></li>
+                <li><a href="#" class="nav__link">Contact</a></li>
+                <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
+            </ul>
         </div>
-        <p></p>        
-        <figure>
-          <img src="./HTML%20Practise%20Assets/laptop.png" class="laptop" alt="home page ipsum" style="width: 100%; max-width: 600px; height: auto;">
-        </figure>
+      </nav>
+      <header>
+        <div class="header__container">
+          <div class="header__description">
+            <h1>America's most awarded library platform</h1>
+            <h2>Find your dream book with <span class="purple">Library</span></h2>
+            <button class="btn">Browse Books</button>
+          </div>
+          <figure class="header__img--wrapper">
+            <img src="Undraw_Books.svg" alt="">
+          </figure>
+        </div>
       </header>
     </section>
 
     <main>
-      <section id="about">
-        <h2>About</h2>
-        <div class="section__description">
-          <div class="description_description--wrapper">
-            <p class="section__description__para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              voluptatibus, quos, voluptates, voluptatibus quisquam
-              voluptatibus quos, voluptates, voluptatibus quisquam
-              voluptatibus quos, voluptates, voluptatibus quisquam
-            </p>
-          <p class="section_description__para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatibus, quos, voluptates, voluptatibus quisquam voluptatibus
-            quos, voluptates, voluptatibus quisquam voluptatibus quos,
-            voluptates, voluptatibus quisquam voluptatibus quos, voluptates,
-            voluptatibus quisquam
-          </p>
-        </div>
-         <figure class="about__img--wrapper">
-         <img src="./HTML Practise Assets/about.jpg" alt="">
-         </figure>
-         </div>
-      </section>
-
-
-
-
-
-
-
-
-
-
-        </div>
-      </section>
-
-      <section id="Discord">
-        <div>
-          <div class="section__description">   
-          <h2>Join our community</h2>
-          </div>
-          <h2>Discord</h2>  
-           <div>    
-            <div style="text-align: center;">
-            <img src="HTML Practise Assets/discord.png"  class="logo" alt="">
-            <div>
-              <p class="section__description__para">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut labore reiciendis quasi dolor iusto libero veritatis. Deleniti officiis, dolores totam, qui voluptate esse voluptas dolorem ducimus incidunt quod saepe eaque?
+      <section id="Highlights">
+        <div class="container">
+          <div class="row">
+           <h2 class="section__title">
+            Why choose <span class="purple">Library</span>?
+           </h2>
+           <div class="highlight__wrapper">
+            <div class="highlight">
+              <div class="highlight__img">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h2 class="highlight__subtitle">
+                Easy and quick
+              </h2>
+              <p class="highlight__para">
+                Get access to the book you purchased online instantly.
               </p>
-              <p style="text-align: center;" >join our community </p>
-              <p>Get help from other learners and teachers</p>
-              <button>Join now!</button> 
             </div>
+
+             <div class="highlight">
+              <div class="highlight__img">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <h3 class="highlight__subtitle">
+                10,000+ books
+              </h3>
+              <p class="highlight__para">
+                Libary has books in all of your favorite catagories.
+              </p>
+            </div>
+
+             <div class="highlight">
+              <div class="highlight__img">
+                <i class="fa-solid fa-tags"></i>
+              </div>
+              <h3 class="highlight__subtitle">
+                Afforrdable
+              </h3>
+              <p class="highlight__para">
+                Get you hands on popular books for as little as $ 10.
+              </p>
+            </div>
+           </div>
+          </div>
+       </div>
+      </section>
+      
+      <!--
+        <section id="features">
+          <div class="container">
+            <div class="row">
+           <h2 class="section__title">
+            featured <span class="purple">books</span>
+           </h2>
+           <div class="books">
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img src="book1.jpg" alt="">
+              </figure>
+              <div class="book__title">   
+                Crack the coding interview
               </div>
             </div>
-      </div>
-    </section>
-    
-    <section  id="Contact">
-      <div style="text-align: center;">
-        <h2>Contact</h2>
-      </div>
-      <form action="">
-        <span>Email</span>
-        <input type="email" placeholder="JoeBlow@skimail.com">
-        <span>Message</span>
-        <textarea placeholder="Cool websites, lets get connected."></textarea>
-        <button>Contact Us</button>
-      </form>
-    </main> 
-        
-    <footer>
-        <img src="./HTML Practise Assets/FES.svg" class="footer__logo" alt="">
-        <div>
-          <a class="footer__link" href="#about">About</a>
-          <a class="footer__link" href="#discord">Discord</a>
-          <a class="footer__link" href="#Contact">Contact</a>
-        </div>
-        <p>copyright frontEnd simplified</p>
-    </footer>
+          </div>  
+        </section>
+        <section id="recent">
+          <div class="container">
+            <div class="row">
 
-</body>
-</html>
+            </div>> 
+          </div>
+        </div>
+        -->
