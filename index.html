@@ -1,5 +1,3 @@
-
-     
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <script src="index.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script type="text/javascript">
+  <script type="text/javascript" src="javascript.js">
     (function () {
       emailjs.init("user_K1PoFs8pB2YVWStDxrUls");
     })();
@@ -47,7 +45,7 @@
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
-          ">Contact</a>
+          " id="openModalLink">Contact</a>
         </li>
         <li class="nav__link click" >
           <a href="#" class="
@@ -87,7 +85,14 @@
     <a href="#projects" class="scroll">
       <div class="scroll__icon click"></div>
     </a>
-    <div class="modal">
+    <div id="myModal" class="modal" style="display:non4e;">
+       <div class="modal-content">
+    <span id="closeModalBtn" class="close">&times;</span>
+    <p>This is a modal triggered by a link!</p>
+  </div>
+</div>
+
+
       <div class="modal__half modal__about">Here is a bit about me
         <h3 class="modal__about--title">Here's a brief overview</h3>
         <h4 class="modal__sub--title modal__sub-title--about"></h4>
@@ -180,7 +185,7 @@
               <div class="project__wrapper--bg"></div>
               <div class="project__description">
                 <h3 class="project__description--title">
-                  Frontend Simplified
+                  Cool Cars
                 </h3>
                 <h4 class="project__description--sub-title">
                   Html, CSS, JavaScript, bootstrap
@@ -276,5 +281,3 @@
 </body>
 
 </html>
-           1234
-           1234
