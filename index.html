@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="index.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script type="text/javascript" src="javascript.js">
@@ -45,7 +47,7 @@
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
-          " id="openModalLink">Contact</a>
+          " data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
         </li>
         <li class="nav__link click" >
           <a href="#" class="
@@ -85,72 +87,24 @@
     <a href="#projects" class="scroll">
       <div class="scroll__icon click"></div>
     </a>
-    <div id="myModal" class="modal" style="display:non4e;">
-       <div class="modal-content">
-    <span id="closeModalBtn" class="close">&times;</span>
-    <p>This is a modal triggered by a link!</p>
-  </div>
-</div>
-
-
-      <div class="modal__half modal__about">Here is a bit about me
-        <h3 class="modal__about--title">Here's a brief overview</h3>
-        <h4 class="modal__sub--title modal__sub-title--about"></h4>
-          <p class="modal__para">I'm a well trained <b class="orange">Frontend Software Engineer</b> with a passion for creating beautiful and functional web applications.
-            <br>
-            Currently studying <b class="orange">javascript</b> frameworks to further enhance my skills and stay up-to-date with industry trends.
-          </p>
-          <div class="modal__languages">
-            <figure>
-              <img src="./assets/html5.svg" class="modal__language--img" alt="">
-              <span class="language"></span>
-            </figure>
-      </div>
-      </div>
-      <form id="contact__form" action="">
-      <div class="modal__half modal__contact">
-        <h3 class="modal__title modal__title--contact">
-          Let's get in touch!
-        </h3>
-        <h3 class="modal__sub--title modal__sub-title--contact">
-          Feel free to reach out to me via email at
-          <a href="mailto:jv.caison@gmail.com">jv.caison@gmail.com</a>
-        </h3>
-        <form id="contact__form" action="">
-          <div class="form__item">
-            <label class="form__item--label" for="name">Name</label>
-            <input class="input" name="user_name" type="text" required>
-          </div>
-          <div class="form__item">
-            <label class="form__item--label" for="email">Email</label>
-            <input class="input" name="user_email" type="email" required>
-          </div>
-          <div class="form__item">
-            <label class="form__item--label" for="message">Message</label>
-            <textarea class="input" name="user_message" rows="5" required></textarea>
-          </div>
-          <button id="contact__submit" class="form__submit">
-            Send Message
-          </button>
-          </form>
-          <div class="modal__overlay modal__overlay--loading">
-            <i class="fas fa-spinner fa-spin"></i>
-          </div>
-          <div class="modal__overlay modal__overlay--success">
-            Thanks for the message looking forward to connecting!
-          </div>
-        </div>
-      <i class="fas fa-times modal__exit"></i>  
-    <img src="./assets/semi circle.svg" class="shape shape--0">
-    <img src="./assets/circle.svg" class="shape shape--1">
-    <img src="./assets/squiggly.svg" class="shape shape--2">
-    <img src="./assets/circle.svg" class="shape shape--3">
-    <img src="./assets/triangle.svg" class="shape shape--4">
-    <img src="./assets/circle.svg" class="shape shape--5">
-    <img src="./assets/squiggly.svg" class="shape shape--6">
-    <img src="./assets/circle.svg" class="shape shape--7">
-    <img src="./assets/semi circle.svg" class="shape shape--8">
+    <div class="modal">
+      <div class="modal__half modal__about">A bit about me...</div>
+      <div class="modal__half modal__contact">Let's get in touch! </div>
+    </div>
   </section>
+    <div class="modal__shapes">  
+        <i class="fas fa-times modal__exit"></i>
+        <img src="./assets/semi circle.svg" class="shape shape--0">
+        <img src="./assets/circle.svg" class="shape shape--1">
+        <img src="./assets/squiggly.svg" class="shape shape--2">
+        <img src="./assets/circle.svg" class="shape shape--3">
+        <img src="./assets/triangle.svg" class="shape shape--4">
+        <img src="./assets/circle.svg" class="shape shape--5">
+        <img src="./assets/squiggly.svg" class="shape shape--6">
+        <img src="./assets/circle.svg" class="shape shape--7">
+        <img src="./assets/semi circle.svg" class="shape shape--8">
+      </div>
+    </div>
   <section id="projects">
     <div class="container">
       <div class="row">
@@ -185,7 +139,7 @@
               <div class="project__wrapper--bg"></div>
               <div class="project__description">
                 <h3 class="project__description--title">
-                  Cool Cars
+                  Frontend Simplified
                 </h3>
                 <h4 class="project__description--sub-title">
                   Html, CSS, JavaScript, bootstrap
@@ -278,6 +232,8 @@
       </div>
     </div>
   </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
